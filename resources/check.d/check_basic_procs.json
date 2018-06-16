@@ -3,7 +3,7 @@
     "check_basic_procs": {
       "command": "${PLUGINS_DIR}/basic/check-procs.rb",
       "handlers": [
-        "mailer"
+        "slack"
       ],
       "subscribers": [
         "basic"
