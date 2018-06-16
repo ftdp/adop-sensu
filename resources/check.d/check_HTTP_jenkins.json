@@ -3,7 +3,7 @@
     "check_HTTP_jenkins": {
       "command": "${PLUGINS_DIR}/basic/check-http.rb -u http://jenkins:8080/$JENKINS_PREFIX/login",
       "handlers": [
-        "mailer"
+        "slack"
       ],
       "subscribers": [
         "jenkins"
