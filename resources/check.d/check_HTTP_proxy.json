@@ -3,7 +3,7 @@
     "check_HTTP_proxy": {
       "command": "${PLUGINS_DIR}/basic/check-http.rb -u http://proxy --response-code 401",
       "handlers": [
-        "mailer"
+        "slack"
       ],
       "subscribers": [
         "proxy"
