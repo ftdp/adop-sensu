@@ -13,8 +13,7 @@ RUN /opt/sensu/embedded/bin/gem install sensu-plugins-slack
 RUN /opt/sensu/embedded/bin/gem install sensu-plugins-docker
 
 # Install journald plugin
-RUN /opt/sensu/embedded/bin/gem install sensu-plugins-logs && cp /opt/sensu/embedded/bin/check-journal.rb /etc/sensu/plugins/basic/check-journal.rb
-
+#RUN /opt/sensu/embedded/bin/gem install sensu-plugins-logs 
 
 # Bake config & checks in
 COPY resources/conf.d/* /etc/sensu/conf.d/
