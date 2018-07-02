@@ -9,6 +9,9 @@ RUN /opt/sensu/embedded/bin/gem install sensu-plugins-mailer
 # Install slack
 RUN /opt/sensu/embedded/bin/gem install sensu-plugins-slack
 
+# Install Docker plugin
+RUN /opt/sensu/embedded/bin/gem install sensu-plugins-docker
+
 # Bake config & checks in
 COPY resources/conf.d/* /etc/sensu/conf.d/
 COPY resources/check.d/ /etc/sensu/check.d/
