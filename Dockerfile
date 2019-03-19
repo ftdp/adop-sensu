@@ -15,6 +15,9 @@ RUN /opt/sensu/embedded/bin/gem install sensu-plugins-docker
 # Install journald plugin
 RUN /opt/sensu/embedded/bin/gem install sensu-plugins-logs 
 
+#Install disk checks for NFS
+RUN /opt/sensu/embedded/bin/gem install sensu-plugins-disk-checks
+
 # Bake config & checks in
 COPY resources/conf.d/* /etc/sensu/conf.d/
 COPY resources/check.d/ /etc/sensu/check.d/
